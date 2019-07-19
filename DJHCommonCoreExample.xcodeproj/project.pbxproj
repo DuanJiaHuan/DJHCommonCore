@@ -14,6 +14,7 @@
 		9F88FA2E22E053A600CA02F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F88FA2D22E053A600CA02F0 /* Assets.xcassets */; };
 		9F88FA3122E053A600CA02F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F88FA2F22E053A600CA02F0 /* LaunchScreen.storyboard */; };
 		9F88FA3422E053A600CA02F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F88FA3322E053A600CA02F0 /* main.m */; };
+		9F88FA3B22E0654500CA02F0 /* DJHCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F88FA3A22E0654500CA02F0 /* DJHCommonCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9F88FA3022E053A600CA02F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F88FA3222E053A600CA02F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F88FA3322E053A600CA02F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F88FA3A22E0654500CA02F0 /* DJHCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DJHCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F88FA3B22E0654500CA02F0 /* DJHCommonCore.framework in Frameworks */,
 				8D4019A309FD2DD449FD0E1C /* Pods_DJHCommonCoreExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +84,7 @@
 		CF14CA933D6FAEA4C926C32E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F88FA3A22E0654500CA02F0 /* DJHCommonCore.framework */,
 				216897CEDAC050CFD90652FB /* Pods_DJHCommonCoreExample.framework */,
 			);
 			name = Frameworks;
@@ -333,7 +337,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HPH65V7A8;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../DJHCommonCore";
 				INFOPLIST_FILE = DJHCommonCoreExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +357,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HPH65V7A8;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../DJHCommonCore";
 				INFOPLIST_FILE = DJHCommonCoreExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

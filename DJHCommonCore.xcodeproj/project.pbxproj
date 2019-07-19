@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9CE2990C24EF36602C56898E /* Pods_DJHCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A4DA7F068D90B1DCDD6DB6 /* Pods_DJHCommonCore.framework */; };
+		9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F88FA4022E073AB00CA02F0 /* DJHNetworkAgent.h */; };
+		9F88FA4322E073AB00CA02F0 /* DJHNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F88FA4122E073AB00CA02F0 /* DJHNetworkAgent.m */; };
 		9FE208F822DD610B00B1E1B7 /* DJHCommonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FE208F622DD610B00B1E1B7 /* DJHCommonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F20A785B31A6F83F60940F1 /* Pods-DJHCommonCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJHCommonCore.release.xcconfig"; path = "../Pods/Target Support Files/Pods-DJHCommonCore/Pods-DJHCommonCore.release.xcconfig"; sourceTree = "<group>"; };
+		9F88FA4022E073AB00CA02F0 /* DJHNetworkAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHNetworkAgent.h; sourceTree = "<group>"; };
+		9F88FA4122E073AB00CA02F0 /* DJHNetworkAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHNetworkAgent.m; sourceTree = "<group>"; };
 		9FE208F322DD610B00B1E1B7 /* DJHCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJHCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE208F622DD610B00B1E1B7 /* DJHCommonCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHCommonCore.h; sourceTree = "<group>"; };
 		9FE208F722DD610B00B1E1B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +45,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9F88FA3C22E0659A00CA02F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9F88FA3F22E066CF00CA02F0 /* DJHNetworking */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9F88FA3F22E066CF00CA02F0 /* DJHNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				9F88FA4022E073AB00CA02F0 /* DJHNetworkAgent.h */,
+				9F88FA4122E073AB00CA02F0 /* DJHNetworkAgent.m */,
+			);
+			path = DJHNetworking;
+			sourceTree = "<group>";
+		};
 		9FE208E922DD610B00B1E1B7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +83,7 @@
 		9FE208F522DD610B00B1E1B7 /* DJHCommonCore */ = {
 			isa = PBXGroup;
 			children = (
+				9F88FA3C22E0659A00CA02F0 /* Classes */,
 				9FE208F622DD610B00B1E1B7 /* DJHCommonCore.h */,
 				9FE208F722DD610B00B1E1B7 /* Info.plist */,
 			);
@@ -83,6 +105,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */,
 				9FE208F822DD610B00B1E1B7 /* DJHCommonCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F88FA4322E073AB00CA02F0 /* DJHNetworkAgent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +336,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJHCommonCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +361,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJHCommonCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

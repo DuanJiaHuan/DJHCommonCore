@@ -5,7 +5,7 @@ target 'DJHCommonCoreExample' do
 
 platform :ios, '8.0'
 use_frameworks!
-project 'DJHCommonCoreExample/DJHCommonCoreExample.xcodeproj'
+project 'DJHCommonCoreExample.xcodeproj'
 
 end
 
