@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
 
   # ――― 项目链接 ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   # s.framework  = "SomeFramework" #依赖的系统框架
-  s.frameworks = "UIKit", "Foundation"
+  # s.frameworks = "UIKit", "Foundation"
   # s.vendored_frameworks = "" #依赖的非系统框架
   # s.library   = "iconv" #依赖的系统库
   # s.libraries = "iconv", "xml2"
@@ -49,13 +49,19 @@ Pod::Spec.new do |s|
   s.requires_arc = true #使用ARC
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "AFNetworking" #依赖的三方库，pod库或者可以是自身的subspec
+  # s.dependency "AFNetworking" #依赖的三方库，pod库或者可以是自身的subspec
 
   # ――― subspec ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.subspec 'DJHNetworking' do |ss|
-    # ss.dependency '' #依赖其他层级时使用的是层级路径
-    ss.source_files = 'DJHCommonCore/Classes/DJHNetworking/**/*.{h.m}'
-    ss.public_header_files = 'DJHCommonCore/Classes/DJHNetworking/**/*.h'
+    ss.dependency 'AFNetworking', '3.2.1' #依赖其他层级时使用的是层级路径
+    ss.source_files = 'DJHCommonCore/Classes/DJHNetworking'
+    ss.public_header_files = 'DJHCommonCore/Classes/DJHNetworking/*.h'
+  end
+
+  s.subspec 'DJHBaseClass' do |ss|
+    # ss.dependency 'AFNetworking', '3.2.1' #依赖其他层级时使用的是层级路径
+    ss.source_files = 'DJHCommonCore/Classes/DJHBaseClass'
+    ss.public_header_files = 'DJHCommonCore/Classes/DJHBaseClass/*.h'
   end
 
 end

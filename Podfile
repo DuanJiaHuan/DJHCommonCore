@@ -1,4 +1,5 @@
 workspace 'DJHCommonCoreExample'#workspace名称
+source 'https://github.com/CocoaPods/Specs.git'
 
 #案例名称
 target 'DJHCommonCoreExample' do
@@ -17,5 +18,6 @@ use_frameworks!
 project 'DJHCommonCore.xcodeproj'
 
 pod 'AFNetworking'
+pod 'YYKit'
 
 end
