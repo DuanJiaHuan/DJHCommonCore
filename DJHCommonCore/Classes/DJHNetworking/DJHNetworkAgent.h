@@ -7,30 +7,38 @@
 //
 
 #import <Foundation/Foundation.h>
-#if __has_include(<AFNetworking/AFNetworking.h>)
-#import <AFNetworking/AFNetworking.h>
-#else
-#import "AFNetworking.h"
-#endif
+
+@class DJHBaseRequest;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DJHNetworkAgent ()
-
-{
-    AFHTTPSessionManager *_sessionManager;
-    AFJSONResponseSerializer *_jsonResponseSerializer;
-    AFXMLParserResponseSerializer *_xmlParserResponseSerialzier;
-    NSMutableDictionary<NSNumber *, DJHBaseRequest *> *_requestsRecord;
-    
-    dispatch_queue_t _processingQueue;
-    pthread_mutex_t _lock;
-    NSIndexSet *_allStatusCodes;
-}
-
-@end
-
 @interface DJHNetworkAgent : NSObject
+
+/**
+ MARK:单例
+
+ @return DJHNetworkAgent
+ */
++ (DJHNetworkAgent *)sharedAgent;
+
+/**
+ MARK:向会话添加请求并启动它
+
+ @param request 请求request
+ */
+- (void)addRequest:(DJHBaseRequest *)request;
+
+/**
+ MARK:取消先前添加的请求
+
+ @param request 请求request
+ */
+- (void)cancelRequest:(DJHBaseRequest *)request;
+
+/**
+ MARK:取消先前添加的所有请求
+ */
+- (void)cancelAllRequests;
 
 @end
 
