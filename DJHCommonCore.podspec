@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0" #当前版本（注意，是当前版本，假如你后续更新了新版本，需要修改此处）
   s.summary      = "项目开发的公共库，与业务层无关." #简要描述，在pod search的时候会显示该信息
   s.description  = "项目开发的公共库，与业务层无关,供其他模块工程使用" #详细描述
-  s.homepage     = "https://github.com" #页面链接，可填宣传页
+  s.homepage     = "https://github.com/DuanJiaHuan/DJHCommonCore.git" #页面链接，可填宣传页
 
   # ―――  规格许可证  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.license      = "LICENSE" #开源协议
@@ -52,13 +52,13 @@ Pod::Spec.new do |s|
   # s.dependency "AFNetworking" #依赖的三方库，pod库或者可以是自身的subspec
 
   # ――― subspec ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.subspec 'DJHNetworking' do |ss|
+  s.subspec 'DJHNetworking' do |ss| #DJHCommonCore/DJHNetworking组件
     ss.dependency 'AFNetworking', '3.2.1' #依赖其他层级时使用的是层级路径
     ss.source_files = 'DJHCommonCore/Classes/DJHNetworking'
     ss.public_header_files = 'DJHCommonCore/Classes/DJHNetworking/*.h'
   end
 
-  s.subspec 'DJHBaseClass' do |ss|
+  s.subspec 'DJHBaseClass' do |ss| #DJHCommonCore/DJHBaseClass组件
     # ss.dependency 'AFNetworking', '3.2.1' #依赖其他层级时使用的是层级路径
     ss.source_files = 'DJHCommonCore/Classes/DJHBaseClass'
     ss.public_header_files = 'DJHCommonCore/Classes/DJHBaseClass/*.h'
