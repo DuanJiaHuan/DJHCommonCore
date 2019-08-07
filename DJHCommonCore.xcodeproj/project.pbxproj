@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9CE2990C24EF36602C56898E /* Pods_DJHCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A4DA7F068D90B1DCDD6DB6 /* Pods_DJHCommonCore.framework */; };
+		9F033F0422F95D97008C5800 /* DJHBaseTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0222F95D97008C5800 /* DJHBaseTabBarController.h */; };
+		9F033F0522F95D97008C5800 /* DJHBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F033F0322F95D97008C5800 /* DJHBaseTabBarController.m */; };
+		9F033F0822F95DC9008C5800 /* DJHBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0622F95DC9008C5800 /* DJHBaseViewController.h */; };
+		9F033F0922F95DC9008C5800 /* DJHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F033F0722F95DC9008C5800 /* DJHBaseViewController.m */; };
+		9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0E22F96649008C5800 /* DJHBaseNavigationController.h */; };
+		9F033F1122F96649008C5800 /* DJHBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F033F0F22F96649008C5800 /* DJHBaseNavigationController.m */; };
 		9F10484F22E3008C008B9B40 /* DJHNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F10484D22E3008C008B9B40 /* DJHNetworkRequest.h */; };
 		9F10485022E3008C008B9B40 /* DJHNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10484E22E3008C008B9B40 /* DJHNetworkRequest.m */; };
-		9F10485422E324E8008B9B40 /* DJHViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F10485222E324E8008B9B40 /* DJHViewController.h */; };
-		9F10485522E324E8008B9B40 /* DJHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10485322E324E8008B9B40 /* DJHViewController.m */; };
 		9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F88FA4022E073AB00CA02F0 /* DJHNetworkAgent.h */; };
 		9F88FA4322E073AB00CA02F0 /* DJHNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F88FA4122E073AB00CA02F0 /* DJHNetworkAgent.m */; };
 		9FE208F822DD610B00B1E1B7 /* DJHCommonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FE208F622DD610B00B1E1B7 /* DJHCommonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,11 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F20A785B31A6F83F60940F1 /* Pods-DJHCommonCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJHCommonCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJHCommonCore/Pods-DJHCommonCore.release.xcconfig"; sourceTree = "<group>"; };
+		5F20A785B31A6F83F60940F1 /* Pods-DJHCommonCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJHCommonCore.release.xcconfig"; path = "../Pods/Target Support Files/Pods-DJHCommonCore/Pods-DJHCommonCore.release.xcconfig"; sourceTree = "<group>"; };
+		9F033F0222F95D97008C5800 /* DJHBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHBaseTabBarController.h; sourceTree = "<group>"; };
+		9F033F0322F95D97008C5800 /* DJHBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHBaseTabBarController.m; sourceTree = "<group>"; };
+		9F033F0622F95DC9008C5800 /* DJHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHBaseViewController.h; sourceTree = "<group>"; };
+		9F033F0722F95DC9008C5800 /* DJHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHBaseViewController.m; sourceTree = "<group>"; };
+		9F033F0E22F96649008C5800 /* DJHBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHBaseNavigationController.h; sourceTree = "<group>"; };
+		9F033F0F22F96649008C5800 /* DJHBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHBaseNavigationController.m; sourceTree = "<group>"; };
 		9F10484D22E3008C008B9B40 /* DJHNetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHNetworkRequest.h; sourceTree = "<group>"; };
 		9F10484E22E3008C008B9B40 /* DJHNetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHNetworkRequest.m; sourceTree = "<group>"; };
-		9F10485222E324E8008B9B40 /* DJHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHViewController.h; sourceTree = "<group>"; };
-		9F10485322E324E8008B9B40 /* DJHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHViewController.m; sourceTree = "<group>"; };
 		9F88FA4022E073AB00CA02F0 /* DJHNetworkAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHNetworkAgent.h; sourceTree = "<group>"; };
 		9F88FA4122E073AB00CA02F0 /* DJHNetworkAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHNetworkAgent.m; sourceTree = "<group>"; };
 		9FE208F322DD610B00B1E1B7 /* DJHCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJHCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,7 +44,7 @@
 		9FF2EEA322E1A48300765590 /* DJHBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHBaseRequest.m; sourceTree = "<group>"; };
 		9FF2EEA622E21FA500765590 /* DJHNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHNetworkTool.h; sourceTree = "<group>"; };
 		9FF2EEA722E21FA500765590 /* DJHNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHNetworkTool.m; sourceTree = "<group>"; };
-		B547709B642BA8CD2CA85494 /* Pods-DJHCommonCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJHCommonCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJHCommonCore/Pods-DJHCommonCore.debug.xcconfig"; sourceTree = "<group>"; };
+		B547709B642BA8CD2CA85494 /* Pods-DJHCommonCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJHCommonCore.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-DJHCommonCore/Pods-DJHCommonCore.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A4DA7F068D90B1DCDD6DB6 /* Pods_DJHCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJHCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -64,8 +72,12 @@
 		9F10485122E322C7008B9B40 /* DJHBaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				9F10485222E324E8008B9B40 /* DJHViewController.h */,
-				9F10485322E324E8008B9B40 /* DJHViewController.m */,
+				9F033F0222F95D97008C5800 /* DJHBaseTabBarController.h */,
+				9F033F0322F95D97008C5800 /* DJHBaseTabBarController.m */,
+				9F033F0622F95DC9008C5800 /* DJHBaseViewController.h */,
+				9F033F0722F95DC9008C5800 /* DJHBaseViewController.m */,
+				9F033F0E22F96649008C5800 /* DJHBaseNavigationController.h */,
+				9F033F0F22F96649008C5800 /* DJHBaseNavigationController.m */,
 			);
 			path = DJHBaseClass;
 			sourceTree = "<group>";
@@ -137,11 +149,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */,
+				9F033F0422F95D97008C5800 /* DJHBaseTabBarController.h in Headers */,
 				9FF2EEA822E21FA500765590 /* DJHNetworkTool.h in Headers */,
 				9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */,
 				9FF2EEA422E1A48300765590 /* DJHBaseRequest.h in Headers */,
 				9F10484F22E3008C008B9B40 /* DJHNetworkRequest.h in Headers */,
-				9F10485422E324E8008B9B40 /* DJHViewController.h in Headers */,
+				9F033F0822F95DC9008C5800 /* DJHBaseViewController.h in Headers */,
 				9FE208F822DD610B00B1E1B7 /* DJHCommonCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,8 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F88FA4322E073AB00CA02F0 /* DJHNetworkAgent.m in Sources */,
-				9F10485522E324E8008B9B40 /* DJHViewController.m in Sources */,
 				9FF2EEA922E21FA500765590 /* DJHNetworkTool.m in Sources */,
+				9F033F1122F96649008C5800 /* DJHBaseNavigationController.m in Sources */,
+				9F033F0522F95D97008C5800 /* DJHBaseTabBarController.m in Sources */,
+				9F033F0922F95DC9008C5800 /* DJHBaseViewController.m in Sources */,
 				9FF2EEA522E1A48300765590 /* DJHBaseRequest.m in Sources */,
 				9F10485022E3008C008B9B40 /* DJHNetworkRequest.m in Sources */,
 			);

@@ -1,18 +1,18 @@
 //
-//  DJHViewController.m
+//  DJHBaseNavigationController.m
 //  DJHCommonCore
 //
-//  Created by 段佳欢 on 2019/7/20.
+//  Created by 段佳欢 on 2019/8/6.
 //  Copyright © 2019 duanjiahuan. All rights reserved.
 //
 
-#import "DJHViewController.h"
+#import "DJHBaseNavigationController.h"
 
-@interface DJHViewController ()
+@interface DJHBaseNavigationController ()
 
 @end
 
-@implementation DJHViewController
+@implementation DJHBaseNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

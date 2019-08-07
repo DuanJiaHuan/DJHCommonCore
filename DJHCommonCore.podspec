@@ -52,14 +52,14 @@ Pod::Spec.new do |s|
   # s.dependency "AFNetworking" #依赖的三方库，pod库或者可以是自身的subspec
 
   # ――― subspec ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.subspec 'DJHNetworking' do |ss| #DJHCommonCore/DJHNetworking组件
-    ss.dependency 'AFNetworking', '3.2.1' #依赖其他层级时使用的是层级路径
+  s.subspec 'DJHNetworking' do |ss| #组件
+    ss.dependency 'AFNetworking' #依赖其他层级时使用的是层级路径
     ss.source_files = 'DJHCommonCore/Classes/DJHNetworking'
     ss.public_header_files = 'DJHCommonCore/Classes/DJHNetworking/*.h'
   end
 
-  s.subspec 'DJHBaseClass' do |ss| #DJHCommonCore/DJHBaseClass组件
-    # ss.dependency 'AFNetworking', '3.2.1' #依赖其他层级时使用的是层级路径
+  s.subspec 'DJHBaseClass' do |ss| #组件
+    ss.dependency 'YYKit' #依赖其他层级时使用的是层级路径
     ss.source_files = 'DJHCommonCore/Classes/DJHBaseClass'
     ss.public_header_files = 'DJHCommonCore/Classes/DJHBaseClass/*.h'
   end
