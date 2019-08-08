@@ -7,6 +7,7 @@
 //
 
 #import "DJHBaseViewController.h"
+#import <YYKit/YYKit.h>
 
 @interface DJHBaseViewController ()
 
@@ -14,9 +15,35 @@
 
 @implementation DJHBaseViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"---%@---", [self class]);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#F5F5F5"];
+    
+    [self buildView];
+}
+
+- (void)buildView
+{
+    //子类中重写
+}
+
+#pragma mark - getter
+
+- (UITableView *)tableView
+{
+    if (_tableView == nil) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    }
+    
+    return _tableView;
 }
 
 /*
