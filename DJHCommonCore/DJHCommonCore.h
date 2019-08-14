@@ -18,6 +18,8 @@ FOUNDATION_EXPORT const unsigned char DJHCommonCoreVersionString[];
 
 #import "DJHBaseViewController.h"
 #import "DJHBaseTabBarController.h"
+#import "DJHBaseTableViewCell.h"
+#import "DJHBaseNavigationController.h"
 #import <YYKit/YYKit.h>
 
 

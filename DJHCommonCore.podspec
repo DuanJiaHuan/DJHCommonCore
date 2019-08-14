@@ -54,14 +54,26 @@ Pod::Spec.new do |s|
   # ――― subspec ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.subspec 'DJHNetworking' do |ss| #组件
     ss.dependency 'AFNetworking' #依赖其他层级时使用的是层级路径
-    ss.source_files = 'DJHCommonCore/Classes/DJHNetworking'
+    ss.source_files = 'DJHCommonCore/Classes/DJHNetworking/**/*.{h,m}'
     ss.public_header_files = 'DJHCommonCore/Classes/DJHNetworking/*.h'
   end
 
   s.subspec 'DJHBaseClass' do |ss| #组件
-    ss.dependency 'YYKit' #依赖其他层级时使用的是层级路径
-    ss.source_files = 'DJHCommonCore/Classes/DJHBaseClass'
+    ss.dependency 'DJHCommonCore/DJHThemeStyle' #依赖其他层级时使用的是层级路径
+    ss.source_files = 'DJHCommonCore/Classes/DJHBaseClass/**/*.{h,m}'
     ss.public_header_files = 'DJHCommonCore/Classes/DJHBaseClass/*.h'
+  end
+
+  s.subspec 'DJHThemeStyle' do |ss| #组件
+    ss.dependency 'YYKit' #依赖其他层级时使用的是层级路径
+    ss.source_files = 'DJHCommonCore/Classes/DJHThemeStyle/**/*.{h,m}'
+    ss.public_header_files = 'DJHCommonCore/Classes/DJHThemeStyle/*.h'
+  end
+
+  s.subspec 'DJHUtility' do |ss| #组件
+    ss.dependency 'YYKit' #依赖其他层级时使用的是层级路径
+    ss.source_files = 'DJHCommonCore/Classes/DJHUtility/**/*.{h,m}'
+    ss.public_header_files = 'DJHCommonCore/Classes/DJHUtility/*.h'
   end
 
 end
