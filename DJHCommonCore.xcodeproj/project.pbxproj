@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9CE2990C24EF36602C56898E /* Pods_DJHCommonCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A4DA7F068D90B1DCDD6DB6 /* Pods_DJHCommonCore.framework */; };
-		9F033F0422F95D97008C5800 /* DJHBaseTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0222F95D97008C5800 /* DJHBaseTabBarController.h */; };
+		9F033F0422F95D97008C5800 /* DJHBaseTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0222F95D97008C5800 /* DJHBaseTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F033F0522F95D97008C5800 /* DJHBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F033F0322F95D97008C5800 /* DJHBaseTabBarController.m */; };
-		9F033F0822F95DC9008C5800 /* DJHBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0622F95DC9008C5800 /* DJHBaseViewController.h */; };
+		9F033F0822F95DC9008C5800 /* DJHBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0622F95DC9008C5800 /* DJHBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F033F0922F95DC9008C5800 /* DJHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F033F0722F95DC9008C5800 /* DJHBaseViewController.m */; };
-		9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0E22F96649008C5800 /* DJHBaseNavigationController.h */; };
+		9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0E22F96649008C5800 /* DJHBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F033F1122F96649008C5800 /* DJHBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F033F0F22F96649008C5800 /* DJHBaseNavigationController.m */; };
 		9F10484F22E3008C008B9B40 /* DJHNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F10484D22E3008C008B9B40 /* DJHNetworkRequest.h */; };
 		9F10485022E3008C008B9B40 /* DJHNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10484E22E3008C008B9B40 /* DJHNetworkRequest.m */; };
@@ -23,8 +23,10 @@
 		9F302B2923039EEE00550215 /* DJHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F302B2723039EEE00550215 /* DJHTheme.m */; };
 		9F302B2C23039F2C00550215 /* DJHTableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F302B2A23039F2C00550215 /* DJHTableSection.h */; };
 		9F302B2D23039F2C00550215 /* DJHTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F302B2B23039F2C00550215 /* DJHTableSection.m */; };
-		9F302B3023039FCA00550215 /* DJHBaseTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F302B2E23039FCA00550215 /* DJHBaseTableViewCell.h */; };
+		9F302B3023039FCA00550215 /* DJHBaseTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F302B2E23039FCA00550215 /* DJHBaseTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F302B3123039FCA00550215 /* DJHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F302B2F23039FCA00550215 /* DJHBaseTableViewCell.m */; };
+		9F302B3D2303BC2400550215 /* DJHBaseViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F302B3B2303BC2400550215 /* DJHBaseViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F302B3E2303BC2400550215 /* DJHBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F302B3C2303BC2400550215 /* DJHBaseViewModel.m */; };
 		9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F88FA4022E073AB00CA02F0 /* DJHNetworkAgent.h */; };
 		9F88FA4322E073AB00CA02F0 /* DJHNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F88FA4122E073AB00CA02F0 /* DJHNetworkAgent.m */; };
 		9FE208F822DD610B00B1E1B7 /* DJHCommonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FE208F622DD610B00B1E1B7 /* DJHCommonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,6 +55,8 @@
 		9F302B2B23039F2C00550215 /* DJHTableSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHTableSection.m; sourceTree = "<group>"; };
 		9F302B2E23039FCA00550215 /* DJHBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHBaseTableViewCell.h; sourceTree = "<group>"; };
 		9F302B2F23039FCA00550215 /* DJHBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHBaseTableViewCell.m; sourceTree = "<group>"; };
+		9F302B3B2303BC2400550215 /* DJHBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHBaseViewModel.h; sourceTree = "<group>"; };
+		9F302B3C2303BC2400550215 /* DJHBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHBaseViewModel.m; sourceTree = "<group>"; };
 		9F88FA4022E073AB00CA02F0 /* DJHNetworkAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHNetworkAgent.h; sourceTree = "<group>"; };
 		9F88FA4122E073AB00CA02F0 /* DJHNetworkAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHNetworkAgent.m; sourceTree = "<group>"; };
 		9FE208F322DD610B00B1E1B7 /* DJHCommonCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJHCommonCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +102,8 @@
 				9F033F0F22F96649008C5800 /* DJHBaseNavigationController.m */,
 				9F302B2E23039FCA00550215 /* DJHBaseTableViewCell.h */,
 				9F302B2F23039FCA00550215 /* DJHBaseTableViewCell.m */,
+				9F302B3B2303BC2400550215 /* DJHBaseViewModel.h */,
+				9F302B3C2303BC2400550215 /* DJHBaseViewModel.m */,
 			);
 			path = DJHBaseClass;
 			sourceTree = "<group>";
@@ -114,10 +120,10 @@
 		9F302B1F23039E4500550215 /* DJHThemeStyle */ = {
 			isa = PBXGroup;
 			children = (
-				9F302B2223039EE000550215 /* DJHThemeStyleManager.h */,
-				9F302B2323039EE000550215 /* DJHThemeStyleManager.m */,
 				9F302B2623039EEE00550215 /* DJHTheme.h */,
 				9F302B2723039EEE00550215 /* DJHTheme.m */,
+				9F302B2223039EE000550215 /* DJHThemeStyleManager.h */,
+				9F302B2323039EE000550215 /* DJHThemeStyleManager.m */,
 			);
 			path = DJHThemeStyle;
 			sourceTree = "<group>";
@@ -193,15 +199,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F302B2C23039F2C00550215 /* DJHTableSection.h in Headers */,
-				9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */,
+				9F302B3023039FCA00550215 /* DJHBaseTableViewCell.h in Headers */,
 				9F033F0422F95D97008C5800 /* DJHBaseTabBarController.h in Headers */,
+				9F033F0822F95DC9008C5800 /* DJHBaseViewController.h in Headers */,
+				9F302B3D2303BC2400550215 /* DJHBaseViewModel.h in Headers */,
+				9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */,
 				9FF2EEA822E21FA500765590 /* DJHNetworkTool.h in Headers */,
 				9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */,
 				9FF2EEA422E1A48300765590 /* DJHBaseRequest.h in Headers */,
 				9F302B2823039EEE00550215 /* DJHTheme.h in Headers */,
 				9F10484F22E3008C008B9B40 /* DJHNetworkRequest.h in Headers */,
-				9F302B3023039FCA00550215 /* DJHBaseTableViewCell.h in Headers */,
-				9F033F0822F95DC9008C5800 /* DJHBaseViewController.h in Headers */,
 				9F302B2423039EE000550215 /* DJHThemeStyleManager.h in Headers */,
 				9FE208F822DD610B00B1E1B7 /* DJHCommonCore.h in Headers */,
 			);
@@ -308,6 +315,7 @@
 				9FF2EEA522E1A48300765590 /* DJHBaseRequest.m in Sources */,
 				9F302B2523039EE000550215 /* DJHThemeStyleManager.m in Sources */,
 				9F302B2923039EEE00550215 /* DJHTheme.m in Sources */,
+				9F302B3E2303BC2400550215 /* DJHBaseViewModel.m in Sources */,
 				9F10485022E3008C008B9B40 /* DJHNetworkRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,10 +447,12 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DJHCommonCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -451,7 +461,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = DJH.DJHCommonCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -465,10 +477,12 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DJHCommonCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -477,7 +491,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = DJH.DJHCommonCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

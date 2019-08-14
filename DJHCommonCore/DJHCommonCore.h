@@ -16,10 +16,11 @@ FOUNDATION_EXPORT const unsigned char DJHCommonCoreVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DJHCommonCore/PublicHeader.h>
 
-#import "DJHBaseViewController.h"
-#import "DJHBaseTabBarController.h"
-#import "DJHBaseTableViewCell.h"
-#import "DJHBaseNavigationController.h"
+#import <DJHCommonCore/DJHBaseViewController.h>
+#import <DJHCommonCore/DJHBaseTabBarController.h>
+#import <DJHCommonCore/DJHBaseTableViewCell.h>
+#import <DJHCommonCore/DJHBaseNavigationController.h>
+#import <DJHCommonCore/DJHBaseViewModel.h>
 #import <YYKit/YYKit.h>
 
 

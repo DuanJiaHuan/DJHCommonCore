@@ -9,7 +9,7 @@
 #import "DJHBaseViewController.h"
 #import <YYKit/YYKit.h>
 
-@interface DJHBaseViewController ()
+@interface DJHBaseViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -18,7 +18,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSLog(@"---%@---", [self class]);
+    NSLog(@"---viewWillAppear:%@--", [self class]);
 }
 
 - (void)viewDidLoad {
@@ -34,6 +34,44 @@
     //子类中重写
 }
 
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 48;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return CGFLOAT_MIN;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return CGFLOAT_MIN;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [[UIView alloc] initWithFrame:CGRectZero];
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [[UIView alloc] initWithFrame:CGRectZero];
+}
+
 #pragma mark - getter
 
 - (UITableView *)tableView
@@ -41,6 +79,9 @@
     if (_tableView == nil) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
         _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor colorWithHexString:@"#F5F5F5"];
     }
     
     return _tableView;
