@@ -13,10 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DJHBaseTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) UILabel *rowTitleLabel;
-@property (strong, nonatomic) UILabel *rowSubTitleLabel;
 @property (strong, nonatomic) UILabel *rowDetailLabel;
 @property (strong, nonatomic) UIImageView *rowIconImgView;
 @property (strong, nonatomic) UIImageView *rowNextImgView;
+@property (assign, nonatomic) BOOL noRowIcon;
+@property (assign, nonatomic) BOOL noRowNext;
 
 @end
 

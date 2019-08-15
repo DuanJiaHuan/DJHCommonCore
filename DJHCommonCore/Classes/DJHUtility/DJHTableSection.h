@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DJHTableSection : NSObject
 
 @property (copy, nonatomic) NSString *sectionTitle;
-@property (strong, nonatomic) NSArray *sectionRows;
+@property (strong, nonatomic) NSArray <DJHTableRow *> *sectionRows;
 
 @end
 

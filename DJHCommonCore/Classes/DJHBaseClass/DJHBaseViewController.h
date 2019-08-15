@@ -14,7 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)buildView;
 
-@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UIBarButtonItem *backBarButtonItem;
+
+//当前导航栏是否隐藏，默认NO
+@property (assign, nonatomic) BOOL currentNavigationBarHidden;
+//当前导航栏是否透明，默认NO
+@property (assign, nonatomic) BOOL currentNavigationBarTransparent;
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "DJHBaseNavigationController.h"
+#import "DJHThemeStyleManager.h"
 
 @interface DJHBaseNavigationController ()
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[DJHThemeStyleManager sharedManager].theme.navigationTitleColor,NSFontAttributeName:[UIFont boldSystemFontOfSize:16]}];
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.childViewControllers.count) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
 }
 
 /*

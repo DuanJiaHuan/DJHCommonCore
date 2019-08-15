@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) UIColor *navigationBackgroundColor;
 @property (strong, nonatomic) UIColor *navigationItemColor;
+@property (strong, nonatomic) UIColor *navigationTitleColor;
 @property (strong, nonatomic) UIColor *projectMainColor;
 @property (strong, nonatomic) UIColor *textBlackColor;
 @property (strong, nonatomic) UIColor *textGrayColor;

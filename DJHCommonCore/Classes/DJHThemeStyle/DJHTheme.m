@@ -31,6 +31,15 @@
     return _navigationItemColor;
 }
 
+- (UIColor *)navigationTitleColor
+{
+    if (_navigationTitleColor == nil) {
+        _navigationTitleColor = [UIColor colorWithHexString:@"#333333"];
+    }
+    
+    return _navigationTitleColor;
+}
+
 - (UIColor *)projectMainColor
 {
     if (_projectMainColor == nil) {
