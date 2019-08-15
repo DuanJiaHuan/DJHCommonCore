@@ -1,16 +1,16 @@
 //
-//  DJHBaseTableViewCell.m
+//  DJHRowTableViewCell.m
 //  DJHCommonCore
 //
-//  Created by 段佳欢 on 2019/8/14.
+//  Created by duanjiahuan on 2019/8/15.
 //  Copyright © 2019 duanjiahuan. All rights reserved.
 //
 
-#import "DJHBaseTableViewCell.h"
+#import "DJHRowTableViewCell.h"
 #import <YYKit/YYKit.h>
 #import <Masonry/Masonry.h>
 
-@implementation DJHBaseTableViewCell
+@implementation DJHRowTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -33,8 +33,16 @@
 {
     if (_rowTitleLabel == nil) {
         _rowTitleLabel = [[UILabel alloc] init];
+        _rowTitleLabel.textAlignment = NSTextAlignmentLeft;
         
         [self.contentView addSubview:_rowTitleLabel];
+        
+        [_rowTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.rowIconImgView.mas_right).offset(12);
+            make.right.equalTo(self.rowDetailLabel.mas_left).offset(-10);
+            make.height.mas_equalTo(22);
+            make.center.equalTo(self.contentView);
+        }];
     }
     
     return _rowTitleLabel;
@@ -44,14 +52,15 @@
 {
     if (_rowDetailLabel == nil) {
         _rowDetailLabel = [[UILabel alloc] init];
+        _rowDetailLabel.textAlignment = NSTextAlignmentRight;
         
         [self.contentView addSubview:_rowDetailLabel];
         
-        [_rowIconImgView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentView).offset(13);
-            make.left.equalTo(self.contentView).offset(16);
-            make.width.mas_equalTo(self->_rowIconImgView.mas_height).multipliedBy(1);
-            make.bottom.equalTo(self.contentView).offset(-13);
+        [_rowDetailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.rowTitleLabel.mas_right).offset(10);
+            make.right.equalTo(self.rowNextImgView.mas_left).offset(-10);
+            make.height.mas_equalTo(22);
+            make.center.equalTo(self.contentView);
         }];
     }
     
@@ -85,39 +94,14 @@
         [self.contentView addSubview:_rowNextImgView];
         
         [_rowNextImgView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentView).offset(13);
-            make.left.equalTo(self.contentView).offset(16);
+            make.right.equalTo(self.contentView).offset(-17);
             make.width.mas_equalTo(14);
             make.height.mas_equalTo(14);
-            make.center.mas_equalTo(self.contentView);
+            make.center.equalTo(self.contentView);
         }];
     }
     
     return _rowNextImgView;
-}
-
-#pragma mark - setter
-
-- (void)setNoRowIcon:(BOOL)noRowIcon
-{
-    _noRowIcon = noRowIcon;
-    if (noRowIcon) {
-        _rowIconImgView.frame = CGRectZero;
-    } else {
-        CGFloat rowIconHeight = self.contentView.frame.size.height/48*22;
-        CGFloat rowIconWidth = rowIconHeight;
-        _rowIconImgView.frame = CGRectMake(16, (self.contentView.frame.size.height - rowIconHeight)/2, rowIconWidth, rowIconHeight);
-    }
-}
-
-- (void)setNoRowNext:(BOOL)noRowNext
-{
-    _noRowNext = noRowNext;
-    if (noRowNext) {
-        _rowNextImgView.frame = CGRectZero;
-    } else {
-        _rowNextImgView.frame = CGRectMake(self.contentView.frame.size.width - 16 - 14, (self.contentView.frame.size.height - 14)/2, 14, 14);
-    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

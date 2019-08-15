@@ -8,6 +8,7 @@
 
 #import "DJHBaseViewController.h"
 #import <YYKit/YYKit.h>
+#import "DJHThemeStyleManager.h"
 
 @interface DJHBaseViewController () <UIGestureRecognizerDelegate>
 
@@ -19,10 +20,10 @@
 {
     [super viewWillAppear:animated];
     NSLog(@"---viewWillAppear:%@--", [self class]);
-    //当前导航栏是否隐藏，默认NO
-    [self.navigationController setNavigationBarHidden:self.currentNavigationBarHidden animated:animated];
     self.navigationController.navigationBar.userInteractionEnabled = NO;
     self.navigationController.navigationBar.translucent = YES;
+    //当前导航栏是否隐藏，默认NO
+    [self.navigationController setNavigationBarHidden:self.currentNavigationBarHidden animated:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -42,11 +43,20 @@
     NSLog(@"---viewWillDisappear:%@--", [self class]);
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    NSLog(@"---viewWillDisappear:%@--", [self class]);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#F5F5F5"];
+    self.view.backgroundColor = [DJHThemeStyleManager sharedManager].theme.viewBackgroundColor;
+    //导航栏是否半透明，默认YES，如果需要导航栏半透明或透明效果必须为YES，translucent为NO导航栏会偏移到导航下面
     self.navigationController.navigationBar.translucent = NO;
+    UIImage *navigationBackgroundImage = [UIImage imageWithColor:[DJHThemeStyleManager sharedManager].theme.navigationBackgroundColor];
+    [self setCurrentNavigationBarBackgroundImage:navigationBackgroundImage];
     
     if (self.navigationController.viewControllers.count > 1) {
         self.navigationItem.leftBarButtonItem = self.backBarButtonItem;
@@ -62,6 +72,9 @@
     [self buildView];
 }
 
+/**
+ 建立初始视图
+ */
 - (void)buildView
 {
     //子类中重写
@@ -92,6 +105,29 @@
     } else {
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
+}
+
+#pragma mark - setter
+
+- (void)setCurrentNavigationBarTransparent:(BOOL)currentNavigationBarTransparent
+{
+    _currentNavigationBarTransparent = currentNavigationBarTransparent;
+    
+    self.navigationController.navigationBar.translucent = YES;
+    if (_currentNavigationBarTransparent == YES) {//透明
+        [self setCurrentNavigationBarBackgroundImage:[UIImage new]];
+    } else {//恢复原状态
+        UIImage *navigationBackgroundImage = [UIImage imageWithColor:[DJHThemeStyleManager sharedManager].theme.navigationBackgroundColor];
+        [self setCurrentNavigationBarBackgroundImage:navigationBackgroundImage];
+    }
+}
+
+- (void)setCurrentNavigationBarBackgroundImage:(UIImage *)currentNavigationBarBackgroundImage
+{
+    //导航栏默认背景颜色，nil显示原始值，[UIImage new]透明，默认nil
+    [self.navigationController.navigationBar setBackgroundImage:currentNavigationBarBackgroundImage forBarMetrics:(UIBarMetricsDefault)];
+    //导航栏默认分割线，nil显示原始值，[UIImage new]透明，默认nil
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
 
 #pragma mark - UIGestureRecognizerDelegate

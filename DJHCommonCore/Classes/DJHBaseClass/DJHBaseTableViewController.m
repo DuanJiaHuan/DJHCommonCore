@@ -8,6 +8,8 @@
 
 #import "DJHBaseTableViewController.h"
 #import <YYKit/YYKit.h>
+#import "DJHThemeStyleManager.h"
+#import "DJHProjectConfig.h"
 
 @interface DJHBaseTableViewController ()
 
@@ -77,13 +79,13 @@
     if (_tableView == nil) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
         if (!self.currentNavigationBarHidden) {
-            _tableView.top = self.navigationController.navigationBar.height;
-            _tableView.height = _tableView.height - _tableView.top;
+            _tableView.top = DJHNavigationHeight;
+            _tableView.height = _tableView.height - DJHNavigationHeight;
         }
         _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.backgroundColor = [UIColor colorWithHexString:@"#F5F5F5"];
+        _tableView.backgroundColor = [DJHThemeStyleManager sharedManager].theme.tableViewBackgroundColor;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     

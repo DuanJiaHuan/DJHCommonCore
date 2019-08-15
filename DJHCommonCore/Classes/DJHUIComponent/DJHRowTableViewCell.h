@@ -1,8 +1,8 @@
 //
-//  DJHBaseTableViewCell.h
+//  DJHRowTableViewCell.h
 //  DJHCommonCore
 //
-//  Created by 段佳欢 on 2019/8/14.
+//  Created by duanjiahuan on 2019/8/15.
 //  Copyright © 2019 duanjiahuan. All rights reserved.
 //
 
@@ -10,14 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DJHBaseTableViewCell : UITableViewCell
+@interface DJHRowTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) UILabel *rowTitleLabel;
 @property (strong, nonatomic) UILabel *rowDetailLabel;
 @property (strong, nonatomic) UIImageView *rowIconImgView;
 @property (strong, nonatomic) UIImageView *rowNextImgView;
-@property (assign, nonatomic) BOOL noRowIcon;
-@property (assign, nonatomic) BOOL noRowNext;
 
 @end
 

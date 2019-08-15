@@ -12,14 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DJHBaseViewController : UIViewController
 
+/**
+ 建立初始视图
+ */
 - (void)buildView;
-
-@property (strong, nonatomic) UIBarButtonItem *backBarButtonItem;
-
+//返回按钮
+@property (strong, nonatomic, nullable) UIBarButtonItem *backBarButtonItem;
 //当前导航栏是否隐藏，默认NO
 @property (assign, nonatomic) BOOL currentNavigationBarHidden;
 //当前导航栏是否透明，默认NO
 @property (assign, nonatomic) BOOL currentNavigationBarTransparent;
+//当前导航栏背景颜色
+@property (strong, nonatomic) UIImage *currentNavigationBarBackgroundImage;
 
 @end
 

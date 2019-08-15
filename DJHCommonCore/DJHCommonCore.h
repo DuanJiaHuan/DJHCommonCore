@@ -18,11 +18,11 @@ FOUNDATION_EXPORT const unsigned char DJHCommonCoreVersionString[];
 
 #import <DJHCommonCore/DJHBaseViewController.h>
 #import <DJHCommonCore/DJHBaseTabBarController.h>
-#import <DJHCommonCore/DJHBaseTableViewCell.h>
 #import <DJHCommonCore/DJHBaseNavigationController.h>
 #import <DJHCommonCore/DJHBaseViewModel.h>
-#import <DJHCommonCore/DJHTableSection.h>
 #import <DJHCommonCore/DJHBaseTableViewController.h>
-#import <YYKit/YYKit.h>
+#import <DJHCommonCore/DJHRowTableViewCell.h>
+#import <DJHCommonCore/DJHTableSection.h>
+#import <DJHCommonCore/DJHProjectConfig.h>
 
 
