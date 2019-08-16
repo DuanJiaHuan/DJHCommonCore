@@ -10,6 +10,13 @@
 
 #define DJHLastAccountKey @"DJHLastAccountKey"
 
+@interface DJHAccountManager ()
+
+@property (strong, nonatomic, readwrite, nullable) DJHAccount *loginAccount;//当前登录账户
+@property (strong, nonatomic, readwrite, nullable) DJHAccount *lastAccount;//最后一次登录的账户
+
+@end
+
 @implementation DJHAccountManager
 
 #pragma mark - 初始化
@@ -42,17 +49,25 @@
     return self;
 }
 
-- (void)loginWithAccountId:(NSString *)accountId
+- (void)loginWithAccountId:(NSString *)accountId completion:(void (^ __nullable)(void))completion
 {
     accountId = [NSString stringWithFormat:@"%@", accountId];
-    if (accountId.length == 0) return;
+    if (accountId.length == 0) {
+        completion();
+        return;
+    }
     
     [[NSUserDefaults standardUserDefaults] setValue:accountId forKey:DJHLastAccountKey];
+    
+    self.isLogin = YES;
+    completion();
 }
 
-- (void)logoutAccount
+- (void)logoutAccountCompletion:(void (^)(void))completion
 {
-    
+    self.loginAccount = nil;
+    self.isLogin = NO;
+    completion();
 }
 
 #pragma mark - getter
@@ -60,10 +75,23 @@
 - (DJHAccount *)loginAccount
 {
     if (_loginAccount == nil) {
-        _loginAccount = [[DJHAccount alloc] init];
+        if (self.isLogin) {
+            NSString *accountId = [[NSUserDefaults standardUserDefaults] valueForKey:DJHLastAccountKey];
+            _loginAccount = [[DJHAccount alloc] initWithAccountId:accountId];
+        }
     }
     
     return _loginAccount;
+}
+
+- (DJHAccount *)lastAccount
+{
+    if (_lastAccount) {
+        NSString *accountId = [[NSUserDefaults standardUserDefaults] valueForKey:DJHLastAccountKey];
+        _lastAccount = [[DJHAccount alloc] initWithAccountId:accountId];
+    }
+    
+    return _lastAccount;
 }
 
 @end

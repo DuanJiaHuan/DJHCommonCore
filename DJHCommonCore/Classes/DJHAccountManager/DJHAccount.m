@@ -7,6 +7,7 @@
 //
 
 #import "DJHAccount.h"
+#import <objc/runtime.h>
 
 static NSString *DJHAccountDefaultKey(NSString *accountId) {
     return [NSString stringWithFormat:@"DJHAccount_%@", accountId];

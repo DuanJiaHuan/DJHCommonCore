@@ -24,5 +24,7 @@ FOUNDATION_EXPORT const unsigned char DJHCommonCoreVersionString[];
 #import <DJHCommonCore/DJHRowTableViewCell.h>
 #import <DJHCommonCore/DJHTableSection.h>
 #import <DJHCommonCore/DJHProjectConfig.h>
+#import <DJHCommonCore/DJHAccountManager.h>
+#import <DJHCommonCore/DJHAccount.h>
 
 

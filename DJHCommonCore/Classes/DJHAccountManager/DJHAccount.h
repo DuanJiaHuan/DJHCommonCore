@@ -12,9 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DJHAccount : NSObject
 
-@property (nonatomic, copy) NSString *accountId;//唯一性
-
 - (instancetype)initWithAccountId:(NSString *)accountId;
+
+@property (copy, nonatomic) NSString *accountId;//唯一性
+@property (copy, nonatomic) NSString *userId;
 
 @end
 

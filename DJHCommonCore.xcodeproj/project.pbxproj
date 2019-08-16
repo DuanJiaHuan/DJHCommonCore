@@ -34,9 +34,9 @@
 		9FEE4813230531FF00A35462 /* DJHTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE480F230531FF00A35462 /* DJHTheme.h */; };
 		9FEE481B23053CD800A35462 /* DJHProjectConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE481923053CD800A35462 /* DJHProjectConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FEE481C23053CD800A35462 /* DJHProjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE481A23053CD800A35462 /* DJHProjectConfig.m */; };
-		9FEE483E23054DC000A35462 /* DJHAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE483C23054DC000A35462 /* DJHAccountManager.h */; };
+		9FEE483E23054DC000A35462 /* DJHAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE483C23054DC000A35462 /* DJHAccountManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FEE483F23054DC000A35462 /* DJHAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE483D23054DC000A35462 /* DJHAccountManager.m */; };
-		9FEE484223054DCE00A35462 /* DJHAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE484023054DCE00A35462 /* DJHAccount.h */; };
+		9FEE484223054DCE00A35462 /* DJHAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE484023054DCE00A35462 /* DJHAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FEE484323054DCE00A35462 /* DJHAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE484123054DCE00A35462 /* DJHAccount.m */; };
 		9FF2EEA422E1A48300765590 /* DJHBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF2EEA222E1A48300765590 /* DJHBaseRequest.h */; };
 		9FF2EEA522E1A48300765590 /* DJHBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2EEA322E1A48300765590 /* DJHBaseRequest.m */; };
@@ -54,7 +54,7 @@
 		9F033F0F22F96649008C5800 /* DJHBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHBaseNavigationController.m; sourceTree = "<group>"; };
 		9F10484D22E3008C008B9B40 /* DJHNetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHNetworkRequest.h; sourceTree = "<group>"; };
 		9F10484E22E3008C008B9B40 /* DJHNetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHNetworkRequest.m; sourceTree = "<group>"; };
-		9F302B2023039E6100550215 /* DJHCommonCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DJHCommonCore.podspec; sourceTree = SOURCE_ROOT; };
+		9F302B2023039E6100550215 /* DJHCommonCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DJHCommonCore.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F302B2A23039F2C00550215 /* DJHTableSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHTableSection.h; sourceTree = "<group>"; };
 		9F302B2B23039F2C00550215 /* DJHTableSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHTableSection.m; sourceTree = "<group>"; };
 		9F302B3B2303BC2400550215 /* DJHBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHBaseViewModel.h; sourceTree = "<group>"; };
@@ -238,20 +238,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEE480A2305304100A35462 /* DJHCommonCore.h in Headers */,
 				9F033F0422F95D97008C5800 /* DJHBaseTabBarController.h in Headers */,
 				9F033F0822F95DC9008C5800 /* DJHBaseViewController.h in Headers */,
 				9F302B3D2303BC2400550215 /* DJHBaseViewModel.h in Headers */,
+				9F302B4123040CFE00550215 /* DJHBaseTableViewController.h in Headers */,
+				9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */,
+				9FEE480823052F6300A35462 /* DJHRowTableViewCell.h in Headers */,
 				9FEE4813230531FF00A35462 /* DJHTheme.h in Headers */,
 				9F302B2C23039F2C00550215 /* DJHTableSection.h in Headers */,
-				9F302B4123040CFE00550215 /* DJHBaseTableViewController.h in Headers */,
-				9FEE480A2305304100A35462 /* DJHCommonCore.h in Headers */,
-				9FEE483E23054DC000A35462 /* DJHAccountManager.h in Headers */,
 				9FEE481B23053CD800A35462 /* DJHProjectConfig.h in Headers */,
-				9FEE480823052F6300A35462 /* DJHRowTableViewCell.h in Headers */,
-				9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */,
+				9FEE483E23054DC000A35462 /* DJHAccountManager.h in Headers */,
+				9FEE484223054DCE00A35462 /* DJHAccount.h in Headers */,
 				9FEE4810230531FF00A35462 /* DJHThemeStyleManager.h in Headers */,
 				9FF2EEA822E21FA500765590 /* DJHNetworkTool.h in Headers */,
-				9FEE484223054DCE00A35462 /* DJHAccount.h in Headers */,
 				9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */,
 				9FF2EEA422E1A48300765590 /* DJHBaseRequest.h in Headers */,
 				9F10484F22E3008C008B9B40 /* DJHNetworkRequest.h in Headers */,

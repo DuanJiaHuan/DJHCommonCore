@@ -22,8 +22,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (DJHAccountManager *)sharedManager;
 
-@property (strong, nonatomic) DJHAccount *loginAccount;//当前登录账户
-@property (strong, nonatomic) DJHAccount *lastAccount;//最后一次登录的账户，如果已登录，和loginAccount一样
+/**
+ 登录账户
+
+ @param accountId 账户id
+ @param completion 回调
+ */
+- (void)loginWithAccountId:(NSString *)accountId completion:(void (^ __nullable)(void))completion;
+
+@property (strong, nonatomic, readonly, nullable) DJHAccount *loginAccount;//当前登录账户
+@property (strong, nonatomic, readonly, nullable) DJHAccount *lastAccount;//最后一次登录的账户
+@property (assign, nonatomic) BOOL isLogin;//是否登录
 
 @end
 

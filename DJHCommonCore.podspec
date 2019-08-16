@@ -81,5 +81,10 @@ Pod::Spec.new do |s|
     ss.source_files = 'DJHCommonCore/Classes/DJHUIComponent/**/*.{h,m}'
     ss.public_header_files = 'DJHCommonCore/Classes/DJHUIComponent/*.h'
   end
+  
+  s.subspec 'DJHAccountManager' do |ss| #组件
+      ss.source_files = 'DJHCommonCore/Classes/DJHAccountManager/**/*.{h,m}'
+      ss.public_header_files = 'DJHCommonCore/Classes/DJHAccountManager/*.h'
+  end
 
 end
