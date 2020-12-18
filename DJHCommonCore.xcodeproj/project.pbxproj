@@ -14,7 +14,7 @@
 		9F033F0922F95DC9008C5800 /* DJHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F033F0722F95DC9008C5800 /* DJHBaseViewController.m */; };
 		9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F033F0E22F96649008C5800 /* DJHBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F033F1122F96649008C5800 /* DJHBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F033F0F22F96649008C5800 /* DJHBaseNavigationController.m */; };
-		9F10484F22E3008C008B9B40 /* DJHNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F10484D22E3008C008B9B40 /* DJHNetworkRequest.h */; };
+		9F10484F22E3008C008B9B40 /* DJHNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F10484D22E3008C008B9B40 /* DJHNetworkRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F10485022E3008C008B9B40 /* DJHNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10484E22E3008C008B9B40 /* DJHNetworkRequest.m */; };
 		9F302B2123039E6100550215 /* DJHCommonCore.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9F302B2023039E6100550215 /* DJHCommonCore.podspec */; };
 		9F302B2C23039F2C00550215 /* DJHTableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F302B2A23039F2C00550215 /* DJHTableSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,24 +23,22 @@
 		9F302B3E2303BC2400550215 /* DJHBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F302B3C2303BC2400550215 /* DJHBaseViewModel.m */; };
 		9F302B4123040CFE00550215 /* DJHBaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F302B3F23040CFE00550215 /* DJHBaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F302B4223040CFE00550215 /* DJHBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F302B4023040CFE00550215 /* DJHBaseTableViewController.m */; };
-		9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F88FA4022E073AB00CA02F0 /* DJHNetworkAgent.h */; };
+		9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F88FA4022E073AB00CA02F0 /* DJHNetworkAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F88FA4322E073AB00CA02F0 /* DJHNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F88FA4122E073AB00CA02F0 /* DJHNetworkAgent.m */; };
 		9FEE480723052F6300A35462 /* DJHRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE480523052F6300A35462 /* DJHRowTableViewCell.m */; };
 		9FEE480823052F6300A35462 /* DJHRowTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE480623052F6300A35462 /* DJHRowTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FEE480A2305304100A35462 /* DJHCommonCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE48092305304100A35462 /* DJHCommonCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FEE4810230531FF00A35462 /* DJHThemeStyleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE480C230531FF00A35462 /* DJHThemeStyleManager.h */; };
 		9FEE4811230531FF00A35462 /* DJHTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE480D230531FF00A35462 /* DJHTheme.m */; };
-		9FEE4812230531FF00A35462 /* DJHThemeStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE480E230531FF00A35462 /* DJHThemeStyleManager.m */; };
-		9FEE4813230531FF00A35462 /* DJHTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE480F230531FF00A35462 /* DJHTheme.h */; };
+		9FEE4813230531FF00A35462 /* DJHTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE480F230531FF00A35462 /* DJHTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FEE481B23053CD800A35462 /* DJHProjectConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE481923053CD800A35462 /* DJHProjectConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FEE481C23053CD800A35462 /* DJHProjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE481A23053CD800A35462 /* DJHProjectConfig.m */; };
 		9FEE483E23054DC000A35462 /* DJHAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE483C23054DC000A35462 /* DJHAccountManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FEE483F23054DC000A35462 /* DJHAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE483D23054DC000A35462 /* DJHAccountManager.m */; };
 		9FEE484223054DCE00A35462 /* DJHAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE484023054DCE00A35462 /* DJHAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FEE484323054DCE00A35462 /* DJHAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE484123054DCE00A35462 /* DJHAccount.m */; };
-		9FF2EEA422E1A48300765590 /* DJHBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF2EEA222E1A48300765590 /* DJHBaseRequest.h */; };
+		9FF2EEA422E1A48300765590 /* DJHBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF2EEA222E1A48300765590 /* DJHBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FF2EEA522E1A48300765590 /* DJHBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2EEA322E1A48300765590 /* DJHBaseRequest.m */; };
-		9FF2EEA822E21FA500765590 /* DJHNetworkTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF2EEA622E21FA500765590 /* DJHNetworkTool.h */; };
+		9FF2EEA822E21FA500765590 /* DJHNetworkTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF2EEA622E21FA500765590 /* DJHNetworkTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FF2EEA922E21FA500765590 /* DJHNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2EEA722E21FA500765590 /* DJHNetworkTool.m */; };
 /* End PBXBuildFile section */
 
@@ -68,9 +66,7 @@
 		9FEE480523052F6300A35462 /* DJHRowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJHRowTableViewCell.m; sourceTree = "<group>"; };
 		9FEE480623052F6300A35462 /* DJHRowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJHRowTableViewCell.h; sourceTree = "<group>"; };
 		9FEE48092305304100A35462 /* DJHCommonCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJHCommonCore.h; sourceTree = "<group>"; };
-		9FEE480C230531FF00A35462 /* DJHThemeStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJHThemeStyleManager.h; sourceTree = "<group>"; };
 		9FEE480D230531FF00A35462 /* DJHTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJHTheme.m; sourceTree = "<group>"; };
-		9FEE480E230531FF00A35462 /* DJHThemeStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJHThemeStyleManager.m; sourceTree = "<group>"; };
 		9FEE480F230531FF00A35462 /* DJHTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJHTheme.h; sourceTree = "<group>"; };
 		9FEE481923053CD800A35462 /* DJHProjectConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJHProjectConfig.h; sourceTree = "<group>"; };
 		9FEE481A23053CD800A35462 /* DJHProjectConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJHProjectConfig.m; sourceTree = "<group>"; };
@@ -204,8 +200,6 @@
 			children = (
 				9FEE480F230531FF00A35462 /* DJHTheme.h */,
 				9FEE480D230531FF00A35462 /* DJHTheme.m */,
-				9FEE480C230531FF00A35462 /* DJHThemeStyleManager.h */,
-				9FEE480E230531FF00A35462 /* DJHThemeStyleManager.m */,
 				9FEE481923053CD800A35462 /* DJHProjectConfig.h */,
 				9FEE481A23053CD800A35462 /* DJHProjectConfig.m */,
 			);
@@ -245,16 +239,15 @@
 				9F302B4123040CFE00550215 /* DJHBaseTableViewController.h in Headers */,
 				9F033F1022F96649008C5800 /* DJHBaseNavigationController.h in Headers */,
 				9FEE480823052F6300A35462 /* DJHRowTableViewCell.h in Headers */,
-				9FEE4813230531FF00A35462 /* DJHTheme.h in Headers */,
 				9F302B2C23039F2C00550215 /* DJHTableSection.h in Headers */,
 				9FEE481B23053CD800A35462 /* DJHProjectConfig.h in Headers */,
 				9FEE483E23054DC000A35462 /* DJHAccountManager.h in Headers */,
-				9FEE484223054DCE00A35462 /* DJHAccount.h in Headers */,
-				9FEE4810230531FF00A35462 /* DJHThemeStyleManager.h in Headers */,
+				9FEE4813230531FF00A35462 /* DJHTheme.h in Headers */,
 				9FF2EEA822E21FA500765590 /* DJHNetworkTool.h in Headers */,
 				9F88FA4222E073AB00CA02F0 /* DJHNetworkAgent.h in Headers */,
 				9FF2EEA422E1A48300765590 /* DJHBaseRequest.h in Headers */,
 				9F10484F22E3008C008B9B40 /* DJHNetworkRequest.h in Headers */,
+				9FEE484223054DCE00A35462 /* DJHAccount.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +354,6 @@
 				9FEE480723052F6300A35462 /* DJHRowTableViewCell.m in Sources */,
 				9FEE484323054DCE00A35462 /* DJHAccount.m in Sources */,
 				9F302B3E2303BC2400550215 /* DJHBaseViewModel.m in Sources */,
-				9FEE4812230531FF00A35462 /* DJHThemeStyleManager.m in Sources */,
 				9FEE4811230531FF00A35462 /* DJHTheme.m in Sources */,
 				9FEE483F23054DC000A35462 /* DJHAccountManager.m in Sources */,
 				9F10485022E3008C008B9B40 /* DJHNetworkRequest.m in Sources */,

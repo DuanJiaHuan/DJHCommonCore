@@ -26,7 +26,7 @@
  
  @return DJHAccountManager
  */
-+ (DJHAccountManager *)sharedManager {
++ (DJHAccountManager *)sharedInstance {
     static id sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -53,21 +53,21 @@
 {
     accountId = [NSString stringWithFormat:@"%@", accountId];
     if (accountId.length == 0) {
-        completion();
+        if (completion) completion();
         return;
     }
     
     [[NSUserDefaults standardUserDefaults] setValue:accountId forKey:DJHLastAccountKey];
     
     self.isLogin = YES;
-    completion();
+    if (completion) completion();
 }
 
 - (void)logoutAccountCompletion:(void (^)(void))completion
 {
     self.loginAccount = nil;
     self.isLogin = NO;
-    completion();
+    if (completion) completion();
 }
 
 #pragma mark - getter

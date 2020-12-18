@@ -17,7 +17,7 @@
  
  @return DJHProjectConfig
  */
-+ (DJHProjectConfig *)sharedConfig {
++ (DJHProjectConfig *)sharedInstance {
     static id sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -38,6 +38,17 @@
     }
     
     return self;
+}
+
+#pragma mark - getter
+
+- (DJHTheme *)theme
+{
+    if (_theme == nil) {
+        _theme = [[DJHTheme alloc] init];
+    }
+    
+    return _theme;
 }
 
 @end

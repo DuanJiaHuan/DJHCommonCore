@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DJHTheme.h"
 
 #define DJHDeviceIsIPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define DJHNavigationHeight (DJHDeviceIsIPhoneX ? 88:64)//适配X导航栏高度
@@ -23,7 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return DJHProjectConfig
  */
-+ (DJHProjectConfig *)sharedConfig;
++ (DJHProjectConfig *)sharedInstance;
+
+/**
+ MARK:主题
+ */
+@property (strong, nonatomic) DJHTheme *theme;
 
 @end
 

@@ -7,7 +7,7 @@
 //
 
 #import "DJHBaseNavigationController.h"
-#import "DJHThemeStyleManager.h"
+#import "DJHProjectConfig.h"
 
 @interface DJHBaseNavigationController ()
 
@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
-    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[DJHThemeStyleManager sharedManager].theme.navigationTitleColor,NSFontAttributeName:[UIFont boldSystemFontOfSize:16]}];
+    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[DJHProjectConfig sharedInstance].theme.navigationTitleColor,NSFontAttributeName:[UIFont boldSystemFontOfSize:16]}];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated

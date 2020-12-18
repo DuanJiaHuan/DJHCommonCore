@@ -14,7 +14,7 @@ NSString *const DJHRequestValidationErrorDomain = @"com.djh.request.validation";
 
 void DJHNetworkLog(NSString *format, ...) {
 #ifdef DEBUG
-    if (![DJHNetworkTool sharedTool].debugLogEnabled) {
+    if (![DJHNetworkTool sharedInstance].debugLogEnabled) {
         return;
     }
     va_list argptr;
@@ -33,7 +33,7 @@ void DJHNetworkLog(NSString *format, ...) {
  
  @return DJHNetworkTool
  */
-+ (DJHNetworkTool *)sharedTool
++ (DJHNetworkTool *)sharedInstance
 {
     static id sharedInstance = nil;
     static dispatch_once_t onceToken;

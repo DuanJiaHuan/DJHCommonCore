@@ -8,7 +8,6 @@
 
 #import "DJHBaseTableViewController.h"
 #import <YYKit/YYKit.h>
-#import "DJHThemeStyleManager.h"
 #import "DJHProjectConfig.h"
 
 @interface DJHBaseTableViewController ()
@@ -85,7 +84,7 @@
         _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.backgroundColor = [DJHThemeStyleManager sharedManager].theme.tableViewBackgroundColor;
+        _tableView.backgroundColor = [DJHProjectConfig sharedInstance].theme.tableViewBackgroundColor;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     

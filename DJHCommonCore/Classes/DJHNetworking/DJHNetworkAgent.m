@@ -42,7 +42,7 @@
 
  @return DJHNetworkAgent
  */
-+ (DJHNetworkAgent *)sharedAgent {
++ (DJHNetworkAgent *)sharedInstance {
     static id sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -285,9 +285,9 @@
         [[NSFileManager defaultManager] removeItemAtPath:downloadTargetPath error:nil];
     }
     
-    BOOL resumeDataFileExists = [[NSFileManager defaultManager] fileExistsAtPath:[[DJHNetworkTool sharedTool] incompleteDownloadTempPathForDownloadPath:downloadPath].path];
-    NSData *data = [NSData dataWithContentsOfURL:[[DJHNetworkTool sharedTool] incompleteDownloadTempPathForDownloadPath:downloadPath]];
-    BOOL resumeDataIsValid = [[DJHNetworkTool sharedTool] validateResumeData:data];
+    BOOL resumeDataFileExists = [[NSFileManager defaultManager] fileExistsAtPath:[[DJHNetworkTool sharedInstance] incompleteDownloadTempPathForDownloadPath:downloadPath].path];
+    NSData *data = [NSData dataWithContentsOfURL:[[DJHNetworkTool sharedInstance] incompleteDownloadTempPathForDownloadPath:downloadPath]];
+    BOOL resumeDataIsValid = [[DJHNetworkTool sharedInstance] validateResumeData:data];
     
     BOOL canBeResumed = resumeDataFileExists && resumeDataIsValid;
     BOOL resumeSucceeded = NO;
@@ -406,7 +406,7 @@
     request.responseObject = responseObject;//默认先不转换
     if ([request.responseObject isKindOfClass:[NSData class]]) {
         request.responseData = responseObject;
-        request.responseString = [[NSString alloc] initWithData:responseObject encoding:[[DJHNetworkTool sharedTool] stringEncodingWithRequest:request]];
+        request.responseString = [[NSString alloc] initWithData:responseObject encoding:[[DJHNetworkTool sharedInstance] stringEncodingWithRequest:request]];
         
         switch (request.responseSerializerType) {
             case DJHResponseSerializerTypeHTTP:
@@ -429,12 +429,12 @@
         succeed = NO;
         requestError = serializationError;
     } else {//请求成功
-        succeed = [[DJHNetworkTool sharedTool] validateResult:request error:&validationError];
+        succeed = [[DJHNetworkTool sharedInstance] validateResult:request error:&validationError];
         requestError = validationError;
     }
     
     if (requestError) {
-        request.errorDescription = [[DJHNetworkTool sharedTool] errorDescriptionWithRequestError:requestError];
+        request.errorDescription = [[DJHNetworkTool sharedInstance] errorDescriptionWithRequestError:requestError];
     }
     
     if (succeed) {

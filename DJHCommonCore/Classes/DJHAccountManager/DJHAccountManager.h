@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return DJHAccountManager
  */
-+ (DJHAccountManager *)sharedManager;
++ (DJHAccountManager *)sharedInstance;
 
 /**
  登录账户

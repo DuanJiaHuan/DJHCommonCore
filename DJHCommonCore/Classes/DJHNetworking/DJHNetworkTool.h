@@ -70,12 +70,14 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return DJHNetworkTool
  */
-+ (DJHNetworkTool *)sharedTool;
++ (DJHNetworkTool *)sharedInstance;
+
+@property (copy, nonatomic) NSString *baseUrlString;
 
 /**
  MARK:是否打印debug信息，默认NO;
  */
-@property (nonatomic) BOOL debugLogEnabled;
+@property (assign, nonatomic) BOOL debugLogEnabled;
 
 #pragma mark - tool
 

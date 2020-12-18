@@ -8,7 +8,7 @@
 
 #import "DJHBaseTabBarController.h"
 #import "DJHBaseNavigationController.h"
-#import "DJHThemeStyleManager.h"
+#import "DJHProjectConfig.h"
 
 @interface DJHBaseTabBarController ()
 
@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [DJHThemeStyleManager sharedManager].theme.viewBackgroundColor;
+    self.view.backgroundColor = [DJHProjectConfig sharedInstance].theme.viewBackgroundColor;
 }
 
 /**

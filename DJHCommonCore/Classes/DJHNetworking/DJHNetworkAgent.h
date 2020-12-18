@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return DJHNetworkAgent
  */
-+ (DJHNetworkAgent *)sharedAgent;
++ (DJHNetworkAgent *)sharedInstance;
 
 /**
  MARK:向会话添加请求并启动它

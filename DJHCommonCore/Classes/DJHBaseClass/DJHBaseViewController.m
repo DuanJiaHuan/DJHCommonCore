@@ -8,7 +8,7 @@
 
 #import "DJHBaseViewController.h"
 #import <YYKit/YYKit.h>
-#import "DJHThemeStyleManager.h"
+#import "DJHProjectConfig.h"
 
 @interface DJHBaseViewController () <UIGestureRecognizerDelegate>
 
@@ -52,10 +52,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [DJHThemeStyleManager sharedManager].theme.viewBackgroundColor;
+    self.view.backgroundColor = [DJHProjectConfig sharedInstance].theme.viewBackgroundColor;
     //导航栏是否半透明，默认YES，如果需要导航栏半透明或透明效果必须为YES，translucent为NO导航栏会偏移到导航下面
     self.navigationController.navigationBar.translucent = NO;
-    UIImage *navigationBackgroundImage = [UIImage imageWithColor:[DJHThemeStyleManager sharedManager].theme.navigationBackgroundColor];
+    UIImage *navigationBackgroundImage = [UIImage imageWithColor:[DJHProjectConfig sharedInstance].theme.navigationBackgroundColor];
     [self setCurrentNavigationBarBackgroundImage:navigationBackgroundImage];
     
     if (self.navigationController.viewControllers.count > 1) {
@@ -117,7 +117,7 @@
     if (_currentNavigationBarTransparent == YES) {//透明
         [self setCurrentNavigationBarBackgroundImage:[UIImage new]];
     } else {//恢复原状态
-        UIImage *navigationBackgroundImage = [UIImage imageWithColor:[DJHThemeStyleManager sharedManager].theme.navigationBackgroundColor];
+        UIImage *navigationBackgroundImage = [UIImage imageWithColor:[DJHProjectConfig sharedInstance].theme.navigationBackgroundColor];
         [self setCurrentNavigationBarBackgroundImage:navigationBackgroundImage];
     }
 }

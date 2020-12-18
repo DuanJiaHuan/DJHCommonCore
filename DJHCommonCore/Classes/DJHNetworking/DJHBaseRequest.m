@@ -136,7 +136,7 @@
  */
 - (void)start
 {
-    [[DJHNetworkAgent sharedAgent] addRequest:self];
+    [[DJHNetworkAgent sharedInstance] addRequest:self];
 }
 
 /**
@@ -145,7 +145,7 @@
 - (void)stop
 {
     self.delegate = nil;
-    [[DJHNetworkAgent sharedAgent] cancelRequest:self];
+    [[DJHNetworkAgent sharedInstance] cancelRequest:self];
 }
 
 /**
